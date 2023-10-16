@@ -1,5 +1,9 @@
+<script setup lang="ts">
+const headerName = 'header';
+</script>
 <template>
   <div>
-    <CommonTemporary />
+    <NuxtLayout :name="headerName" />
+    <NuxtPage />
   </div>
 </template>

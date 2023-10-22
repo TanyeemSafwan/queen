@@ -14,7 +14,7 @@
 						</div>
 						<div class="col-lg-7">
 							<div class="hero-img-wrap">
-								<img src="~/assets/images/couch.png" class="img-fluid">
+								<img src="~/assets/images/people.png" class="img-fluid">
 							</div>
 						</div>
 					</div>

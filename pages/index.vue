@@ -4,7 +4,6 @@ const { data }  = await getSomething();
 </script>
 <template>
   <div>
-    {{ data }}
     <HomepageHero />
     <HomepageProduct />
   </div>

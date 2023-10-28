@@ -16,7 +16,7 @@ const navVisible = ref(false);
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<div :class="navVisible ? 'collapse navbar-collapse' : 'collapse navbar-collapse show'" id="navbarsFurni">
+				<div :class="navVisible ? 'collapse navbar-collapse show' : 'collapse navbar-collapse'" id="navbarsFurni">
 					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
 						<li :class="route.name?.toString().includes('index') ? 'nav-item active' : ''">
 							<a class="nav-link" href="/">Home</a>

@@ -12,9 +12,14 @@ export default defineNuxtConfig({
     ]
   },
   runtimeConfig: {
-    MONGO_URI: process.env.MONGO_URI
+    MONGO_URI: process.env.MONGO_URI,
+    SUPER_ADMIN: process.env.SUPER_ADMIN,
+    SUPER_PASSWORD: process.env.SUPER_PASSWORD
   },
   nitro: {
     plugins: ["@/server/db/index.ts"]
-  }
+  },
+  modules: [
+    '@pinia/nuxt'
+  ]
 })

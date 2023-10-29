@@ -1,6 +1,8 @@
 <script lang="ts" setup>
+import { useAdminInfo } from "~/store/useAdminInfo";
+
 const route = useRoute();
-console.log('current name', route.name);
+const adminInfo = useAdminInfo();
 const navVisible = ref(false);
 </script>
 
@@ -29,7 +31,7 @@ const navVisible = ref(false);
 					</ul>
 
 					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
-						<li><a class="nav-link" href="#"><img src="~/assets/images/user.svg"></a></li>
+						<li><a class="nav-link" href="/admin"><img src="~/assets/images/user.svg"></a></li>
 						<li><a class="nav-link" href=""><img src="~/assets/images/cart.svg"></a></li>
 					</ul>
 				</div>
